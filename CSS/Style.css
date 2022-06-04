@@ -1,0 +1,337 @@
+ body {
+     direction: rtl;
+ }
+ 
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ @font-face {
+     font-family: font-dana;
+     src: url(../CSS/font-2/dana-demibold.eot), url('../CSS/font-2/dana-demibold.otf'), url('../CSS/font-2/dana-demibold.svg'), url('../CSS/font-2/dana-demibold.ttf'), url('../CSS/font-2/dana-demibold.woff');
+ }
+ 
+ @font-face {
+     font-family: font-iran-sans;
+     src: url('../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.eot'), url('../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.otf'), url('../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.svg'), url('../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.ttf'), url('../CSS/font-3/IRANSans_Light/fonts/IRANSans_Light.woff');
+ }
+ /*style for js*/
+ 
+ .bordrr-error {
+     border: solid 2px red
+ }
+ 
+ .border-correct {
+     border: solid 1px green;
+ }
+ 
+ .bordrr-normal {
+     border: solid 1px #777;
+ }
+ 
+ .main-container {
+     display: flex;
+     width: 100%;
+     padding: 2% 0%;
+ }
+ 
+ .contcat-conatiner {
+     height: 600px;
+     width: 25%;
+     background-color: #F0F0F0;
+     border-radius: .5rem;
+     margin-right: 1%;
+     box-shadow: 0px 0px 10px black;
+ }
+ 
+ .contcat-conatiner-list {
+     width: 70%;
+     height: 600px;
+     background-color: #e52165;
+     border-radius: .5rem;
+     margin-right: 2%;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .contcat-conatiner .header-contact {
+     width: 100%;
+     height: 15%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .contcat-conatiner div:nth-child(1)>h2 {
+     font-family: font-dana;
+     color: black;
+     font-size: 1.3em;
+     text-align: center;
+ }
+ 
+ .contcat-conatiner .conetnt-info {
+     width: 100%;
+     height: 60%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+ }
+ 
+ .contcat-conatiner .conetnt-info .group-input {
+     width: 100%;
+     height: 30%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .contcat-conatiner .footer-contact {
+     width: 100%;
+     height: 25%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+ }
+ 
+ .group-input .container-name {
+     width: 80%;
+     height: 30%;
+     display: flex;
+     align-items: center;
+     padding: 0.5em;
+     font-family: font-iran-sans;
+ }
+ 
+ .conatiner-input {
+     height: 70%;
+     width: 85%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ input[type='text'] {
+     width: 95%;
+     outline: none;
+     padding: 0.7em 20px 0.7em 12px;
+     font-size: 1rem;
+     border-radius: 40px;
+     font-family: font-iran-sans;
+ }
+ 
+ .BtnaddContact {
+     width: 200px;
+     height: 50px;
+     font-size: 1em;
+     font-family: font-iran-sans;
+     background-color: #000411;
+     color: white;
+     border-radius: .5rem;
+     cursor: pointer;
+ }
+ 
+ .BtnremoveContat {
+     width: 200px;
+     height: 50px;
+     padding: 1em;
+     font-size: 1em;
+     font-family: font-iran-sans;
+     background-color: #000411;
+     color: white;
+     border-radius: .5rem;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .icon-btn {
+     padding: 0.5em;
+ }
+ 
+ .header-contacts {
+     width: 100%;
+     height: 15%;
+     display: flex;
+     align-items: center;
+ }
+ 
+ .container-delete {
+     width: 20%;
+     height: 100%;
+     justify-content: center;
+     display: flex;
+     align-items: center;
+     padding: 0.5em;
+ }
+ 
+ .container-header-lsit {
+     width: 55%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     font-family: font-dana;
+     color: white;
+     justify-content: center;
+ }
+ 
+ .delete-all {
+     width: 150px;
+     height: 50px;
+     border-radius: .5rem;
+     font-family: font-iran-sans;
+     cursor: pointer;
+     font-size: 0.9em;
+     outline: none;
+     border: none;
+ }
+ 
+ .container-card {
+     width: 100%;
+     height: 85%;
+     display: flex;
+     flex-wrap: wrap;
+     overflow: auto;
+     justify-content: space-around;
+ }
+ 
+ .card {
+     width: 45%;
+     height: 60%;
+     background-color: white;
+     display: flex;
+     align-items: center;
+     margin: 0.5rem;
+     border-radius: .5rem;
+     flex-direction: column;
+ }
+ 
+ .title {
+     font-weight: 700;
+ }
+ 
+ .value {
+     color: black;
+     opacity: 0.9;
+     font-weight: 700;
+ }
+ 
+ .content-btn {
+     height: 32%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .content-user {
+     width: 100%;
+     display: flex;
+     height: 17%;
+     justify-content: center;
+     align-items: center;
+     font-family: font-iran-sans;
+ }
+ 
+ .btn-del {
+     width: 150px;
+     height: 50px;
+     border-radius: 20px;
+     font-family: font-iran-sans;
+     background-color: #222f3e;
+     color: white;
+     font-weight: bold;
+     cursor: pointer;
+ }
+ 
+ @media screen and (max-width: 990px) {
+     .main-container {
+         display: flex;
+         min-height: 100vh;
+         flex-direction: column;
+         width: 100%;
+         justify-content: center;
+         align-items: center;
+     }
+     .contcat-conatiner {
+         height: 600px;
+         width: 90%;
+         border-radius: .5rem;
+         margin-left: 0;
+         margin: 1rem 0;
+     }
+     .contcat-conatiner-list {
+         width: 90%;
+         height: 100%;
+         border-radius: .5rem;
+         margin: 1rem 0;
+     }
+     .container-card {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         flex-wrap: nowrap;
+         flex-direction: column;
+         overflow: auto;
+         justify-content: space-around;
+     }
+     .card {
+         width: 95%;
+         height: 20em;
+         background-color: white;
+         display: flex;
+         align-items: center;
+         margin: 0.5rem;
+         border-radius: .5rem;
+         flex-direction: column;
+         padding: 2EM 0;
+     }
+     .content-user {
+         width: 100%;
+         height: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-family: font-iran-sans;
+     }
+     .content-btn {
+         height: 50%;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+ 
+ @media screen and (max-width: 576px) {
+     .header-contacts {
+         width: 100%;
+         height: 20%;
+         display: flex;
+         flex-direction: column-reverse;
+         align-items: center;
+         padding: 1em 0;
+     }
+     .delete-all {
+         height: 50px;
+         border-radius: .5rem;
+         font-family: font-iran-sans;
+         cursor: pointer;
+         font-size: 0.9em;
+         outline: none;
+         border: none;
+     }
+     .container-delete {
+         width: 100%;
+         height: 100%;
+         justify-content: center;
+         display: flex;
+         align-items: center;
+         padding: 0.5em;
+         display: none;
+     }
+ }
